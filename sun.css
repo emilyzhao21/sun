@@ -1,0 +1,261 @@
+/* css初始化代码*/
+body {margin:0; padding:0; font:12px/1.5 "微软雅黑",\5b8b\4f53,Arial,sans-serif; color: #3b3b3b;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;}
+table,td,tr,th{font-size:12px;}
+ol,ul {list-style:none;}
+li{list-style-type:none;}
+img{vertical-align:top;border:0;}
+h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight:normal;}
+address,cite,code,em,th,i{font-weight:normal; font-style:normal;}
+.clearfix{*zoom:1;}
+.clearfix:after{display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";}
+a {color:#252525; text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {color:#ba2636;text-decoration:underline;}
+a:active {color:#ba2636;}
+
+/* 版心同一样式 */
+.w{
+	width: 1000px;
+	margin:0 auto;
+}
+
+/* welcome start */
+.welcome{
+	height:40px;
+	background-color: #333333;
+}
+.welcome-in span{
+	color:#fff;
+	font-size:14px;
+	line-height: 40px;
+}
+/* welcome end */
+
+/* nav start */
+.nav .logo{
+	float:left;
+	margin-right:220px;
+}
+.nav ul{
+	line-height: 100px;
+}
+.nav ul li{
+	float:left;
+}
+.nav .first-a{
+	color:#9dcb2a;
+	border-bottom: 3px solid #9dcb2a;
+}
+.nav ul li a{
+	display:inline-block;
+	color:#3b3b3b;
+	font-size:16px;
+	margin-right:20px;
+	height: 32px;
+	line-height: 32px;
+	/* 给a标签设个宽高，与边框撑起一段距离 */
+}
+.nav ul li a:hover{
+	text-decoration: none; 
+}
+.nav ul li a:hover{
+	color:#9dcb2a;
+	text-decoration: none;
+	border-bottom: 3px solid #9dcb2a;
+}
+/* nav end */
+
+/* banner start */
+
+.banner{
+	height: 600px;
+	background:url(images/banner.jpg) no-repeat top center;
+}
+
+/* banner end */
+
+/* introduce start */
+
+.introduce{
+	height: 290px;
+	background-color:#f2f2f2;
+}
+.introduce div{
+	text-align:center;
+	margin-bottom: 10px;
+}
+ .introduce ul {
+	padding-top:20px;
+}
+.introduce ul li{
+	float:left;
+	height: 220px;
+	width: 205px;
+	padding:0 20px;
+	border-left:1px solid #fff;
+	border-right: 1px solid #ddd;
+}
+.introduce ul .first-li{
+	border-left: none;
+}
+.introduce ul .last-li{
+	border-right: none;
+}
+.introduce ul li h2{
+	font-size:18px;
+	text-align: center;
+}
+.introduce li p{
+	margin:18px 0;
+	text-indent: 2em;
+}
+
+/* introduce end */
+
+/* title start */
+.title{
+	height: 117px;
+	background-color: #e1e1e1;
+	text-align: center;
+}
+.title h1{
+	font-size:24px;
+	color:#222;
+	padding-top:32px;
+}
+.title p{
+	font-size:16px;
+	padding-top:5px;
+}
+/* title end */
+
+/* download start */
+
+.download{
+	height: 682px;
+	background:url(images/download.jpg) no-repeat top center;
+	position:relative;
+}
+.download a{
+	display: block;
+	width: 338px;
+	height: 77px;
+	position: absolute;
+	right:286px;
+	top:190px;
+}
+/* download end */
+
+/* news start */
+
+.news{
+	height: 470px;
+	overflow:hidden;
+}
+.companypic{
+	text-align:center;
+	margin-top:20px;
+}
+.news-con{
+	padding-top:20px;
+}
+.news-con dl{
+	float:left;
+	padding:14px;
+}
+.news-con dt{
+	float:left;
+}
+.news-con dd{
+	float:left;
+	width: 290px;
+	margin-left:8px;
+	line-height: 30px;
+}
+.news-con dd h3{
+	font-size:16px;
+}
+.news-con dd p{
+	color:#5e5e5e;
+}
+.news-con2 ul{
+	float:left;
+	font-size:14px;
+	padding:40px 40px 0 14px;
+}
+.news-con2 ul li{
+	height: 36px;
+	line-height: 36px;
+	background: url(images/square.jpg) no-repeat left center;
+	padding-left: 10px;
+}
+.news-con2 ul li span{
+	padding-right:140px;
+}
+/* news start */
+
+/* footer start */
+
+.footer{
+	height: 312px;
+	background-color: #333;
+	overflow:hidden; /* 嵌套内边距塌陷 */
+}
+.mail{
+	margin:45px;
+	float:left;
+}
+.mail h2{
+	font-size:14px;
+	color:#e0e0e0;
+	padding-left:35px;
+	background:url(images/mail.jpg) no-repeat left center;
+}
+.mail textarea{
+	resize:none;
+	background-color: #1d2026;
+	width: 585px;
+	height: 106px;
+	outline:none;
+	border: 1px solid #3b3b43;
+	color:#5d5d5d;
+}
+.mail button{
+	width: 35px;
+	height: 109px;
+	background: url(images/submit.jpg) no-repeat right;
+	vertical-align:top; 
+/* 图片和行内块元素不会完全对齐，默认基线对齐，需要设置vertical-align属性 */
+	border:0;
+	outline:none;
+
+}
+.tellus{
+	float:left;
+	margin:45px 0 0 48px;
+}
+.tellus h2{
+	font-size:14px;
+	color:#e0e0e0;
+	padding-left:35px;
+	background:url(images/man.jpg) no-repeat left center;	
+}
+.tellus p{
+	color:#858585;
+	line-height: 30px;
+}
+.footer-bottom{
+	text-align: center;
+	height: 88px;
+	padding: 40px;
+	color:#e0e0e0;
+	font-family:"宋体";
+}
+.footer-bottom a{
+	padding:15px;
+	font-size:16px;
+	color:#cecece;
+	font-family:"宋体";
+}
+/* footer end */
